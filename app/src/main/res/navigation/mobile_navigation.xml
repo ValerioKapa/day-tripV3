@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_cloud_db"
+        android:name="com.example.day_tripv3.fragment_firebase"
+        android:label="@string/menu_firebase"
+        tools:layout="@layout/fragment_firebase" >
+        <action
+            android:id="@+id/action_nav_cloud_db_to_fragment_firebase_add"
+            app:destination="@id/fragment_firebase_add" />
+        <action
+            android:id="@+id/action_nav_cloud_db_to_fragment_firebase_see"
+            app:destination="@id/fragment_firebase_see" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_local_db"
+        android:name="com.example.day_tripv3.fragment_local"
+        android:label="@string/menu_local"
+        tools:layout="@layout/fragment_local" />
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.day_tripv3.fragment_home"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/fragment_firebase_add"
+        android:name="com.example.day_tripv3.fragment_firebase_add"
+        android:label="fragment_firebase_add"
+        tools:layout="@layout/fragment_firebase_add" />
+    <fragment
+        android:id="@+id/fragment_firebase_see"
+        android:name="com.example.day_tripv3.fragment_firebase_see"
+        android:label="fragment_firebase_see"
+        tools:layout="@layout/fragment_firebase_see" />
+
+</navigation>

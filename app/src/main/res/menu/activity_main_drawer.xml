@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_page"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_local_db"
+            android:icon="@drawable/ic_local_room_api"
+            android:title="Local DB" />
+        <item
+            android:id="@+id/nav_cloud_db"
+            android:icon="@drawable/ic_cloud_firebase"
+            android:title="Cloud DB" />
+    </group>
+</menu>
