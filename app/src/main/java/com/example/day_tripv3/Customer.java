@@ -1,16 +1,34 @@
 package com.example.day_tripv3;
 
 
-public class Costumer {
-    String name, sirname, hotel, id;
+public class Customer {
+    String name, sirname, hotel, id, trip, phone;
 
-    public Costumer(){}
+    public Customer(){}
 
-    public Costumer(String name, String sirname, String hotel, String id) {
+    public Customer(String name, String sirname, String hotel, String phone, String id, String trip) {
         this.name = name;
         this.sirname = sirname;
         this.hotel = hotel;
+        this.trip = trip;
         this.id = id;
+        this.phone = phone;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getTrip() {
+        return trip;
+    }
+
+    public void setTrip(String trip) {
+        this.trip = trip;
     }
 
     public String getId() {

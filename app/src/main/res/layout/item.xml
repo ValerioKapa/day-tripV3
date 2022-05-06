@@ -127,17 +127,17 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Αναγνωριστικό :"
+                android:text="Τηλέφωνο :"
                 android:textColor="@color/black"
                 android:textSize="22sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/TextViewID"
+                android:id="@+id/TextViewPhone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="6dp"
-                android:text="id"
+                android:text="Τηλέφωνο"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 

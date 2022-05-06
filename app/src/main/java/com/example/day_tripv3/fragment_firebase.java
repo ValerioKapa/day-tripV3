@@ -41,7 +41,7 @@ public class fragment_firebase extends Fragment implements AdapterView.OnItemSel
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        //Destination Selection Spinner, above button
+        //Destination Selection Spinner, above "EMFANISH PELATON" button
         spinner = view.findViewById(R.id.trip_spinner);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this.getContext(), R.array.destinations_array, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);

@@ -5,66 +5,105 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
+    android:clickable="true"
     tools:context=".fragment_firebase_add">
 
+
     <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="165dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
+        android:id="@+id/editTextPersonPhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="30dp"
         android:ems="10"
-        android:hint="Ονομα"
+        android:hint="Τηλέφωνο"
+        android:inputType="phone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPersonHotel"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/editTextPersonSirname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="Επίθετο"
         android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPersonHotel"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextPersonName" />
 
     <EditText
-        android:id="@+id/editTextTextPersonSirname"
-        android:layout_width="165dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:id="@+id/editTextPersonHotel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="10dp"
         android:ems="10"
-        android:hint="Επιθετο"
+        android:hint="Ξενοδοχείο"
+        android:inputType="textPostalAddress"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPersonPhone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPersonSirname" />
+
+    <EditText
+        android:id="@+id/editTextPersonName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="153dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="Όνομα"
         android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPersonSirname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonTrip"
-        android:layout_width="165dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
-        android:ems="10"
-        android:hint="Εκδρομη"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonSirname" />
-
-
-    <EditText
-        android:id="@+id/editTextTextPersonHotel"
-        android:layout_width="165dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="23dp"
-        android:ems="10"
-        android:hint="Ξενοδοχειο"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonTrip" />
+        app:layout_constraintTop_toBottomOf="@+id/spinnerPersonTrip" />
 
     <Button
         android:id="@+id/submit_new_costumer_button"
-        android:layout_width="159dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="35dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="224dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="60dp"
         android:backgroundTint="@color/lime"
-        android:text="Climk to Summit"
+        android:text="Αποθήκευση"
+
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerPersonTrip"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerPersonTrip"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/submit_new_costumer_button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

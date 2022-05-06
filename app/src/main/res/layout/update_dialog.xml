@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/update_dialog"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="12dp"
+        android:layout_margin="10dp"
         android:text="Update Info"
         android:textAlignment="center"
-        android:textSize="24sp" />
+        android:textSize="22sp" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/update_info_name_layout"
@@ -19,12 +19,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:outlineAmbientShadowColor="@color/black"
-        android:padding="10dp">
+        android:padding="8dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/update_info_name_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="textPersonName"
             android:hint="Name" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -33,13 +34,14 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp">
+        android:padding="8dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/update_info_surname_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Surame"
+            android:inputType="textPersonName"
             android:textColorHint="#757575" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -48,19 +50,36 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp">
+        android:padding="8dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/update_info_hotel_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="textPostalAddress"
             android:hint="Hotel" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/update_info_phone_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/update_info_phone_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:hint="Phone Number" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/update_info_button"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="63dp"
         android:backgroundTint="@color/lime"
-        android:text="Update" />
+        android:text="Update"
+        app:cornerRadius="0dp" />
 </LinearLayout>

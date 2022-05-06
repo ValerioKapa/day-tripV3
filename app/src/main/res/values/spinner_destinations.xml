@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="destinations_array">
-        <item>Trip001</item>
-        <item>Trip002</item>
-        <item>Trip003</item>
+        <item>Εύβοια</item>
+        <item>Αίγινα</item>
+        <item>Ρέθυμνο</item>
+        <item>Ρόδος</item>
+        <item>Ζάκυνθος</item>
+        <item>Πήλιο</item>
+        <item>Καστορία</item>
+        <item>Κέρκυρα</item>
+        <item>Αλεξανδρούπολη</item>
     </string-array>
 </resources>
